@@ -1,0 +1,61 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: transparent;
+  border: transparent;
+  margin: 0;
+  font-family: "Arial", sans-serif;
+}
+
+.logo {
+  position: relative;
+  width: 20vw; /* Responsive width */
+  height: 20vw; /* Maintain aspect ratio */
+  max-width: 200px; /* Limit maximum size */
+  max-height: 200px; /* Limit maximum size */
+}
+
+.outer-circle {
+  width: 100%; /* Full width of logo container */
+  height: 100%; /* Full height of logo container */
+  background-color: #ffffff;
+  border-radius: 50%;
+  position: absolute;
+  top: 0; /* Align to the top */
+  left: 0; /* Align to the left */
+  z-index: 1;
+}
+
+.inner-circle {
+  width: 70%; /* Inner circle size */
+  height: 70%; /* Inner circle size */
+  background-color: #b4bcc7; /* White inner circle */
+  border-radius: 50%;
+  position: absolute;
+  top: 15%; /* Center it vertically */
+  left: 15%; /* Center it horizontally */
+  z-index: 2;
+}
+
+.ellipse {
+  width: 50%; /* 50% of the logo container */
+  height: 20%; /* Adjust height for the ellipse */
+  background-color: #49658c;
+  border-radius: 50%; /* Create an ellipse */
+  position: absolute;
+  top: 50%; /* Position within the logo */
+  left: 50%; /* Centered within the logo */
+  transform: translate(-50%, -50%); /* Center the ellipse */
+  display: flex; /* Center the text */
+  justify-content: center; /* Center the text */
+  align-items: center; /* Center the text */
+  z-index: 3;
+}
+
+.ellipse-text {
+  color: white;
+  font-size: 2vw; /* Adjust font size */
+  text-align: center; /* Center text */
+}
